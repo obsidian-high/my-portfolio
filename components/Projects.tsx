@@ -15,6 +15,41 @@ const projects = [
     github: "" 
   },
   {
+    title: "S&A Consulting",
+    desc: "Consulting firm organisation with a focus on providing strategic solutions.",
+    tags: ["React", "Framer Motion", "Forms"],
+    image: "/projects/s&a consulting.png",
+    color: "from-amber-400 to-orange-300",
+    link: "https://s-a-consulting.vercel.app/",
+    github: "" 
+  },
+  {
+    title: "Imara Blocks Ltd",
+    desc: "Business-oriented website for a construction company with a focus on quality and innovation.",
+    tags: ["React", "Framer Motion", "Forms"],
+    image: "/projects/imarablocks.png",
+    color: "from-amber-400 to-orange-300",
+    link: "https://imara-blocks-ltd.vercel.app/",
+    github: "" 
+  },
+   {
+    title: "Motherbloom-PostPartum Retreat",
+    desc: "Unique, user-friendly website with a focus on postpartum care and support.",
+    tags: ["React", "Framer Motion", "Forms"],
+    image: "/projects/motherbloom proj.png",
+    color: "from-amber-400 to-orange-300",
+    link: "https://mother-bloom-postpartum-retreat.vercel.app/",
+    github: "" 
+  },{
+    title: "Augab Ltd",
+    desc: "A local business Garage , Cyber cafe & Computer training center.",
+    tags: ["React", "Framer Motion", "Forms"],
+    image: "/projects/augabltd.png",
+    color: "from-amber-400 to-orange-300",
+    link: "https://augab.vercel.app/",
+    github: "" 
+  },
+  {
     title: "My Little Bear Daycare",
     desc: "Warm, user-friendly website helping parents explore programs and schedule visits easily.",
     tags: ["React", "Framer Motion", "Forms"],
