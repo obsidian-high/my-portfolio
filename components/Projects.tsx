@@ -69,15 +69,7 @@ const projects = [
     link: "https://augab.vercel.app/",
     github: "" 
   },
-  {
-    title: "Portfolio Website",
-    desc: "Modern, high-performance web portfolio built with Next.js.",
-    tags: ["Next.js", "Tailwind", "React"],
-    image: "/projects/portfolio.png",
-    color: "from-orange-500 to-amber-500",
-    link: "#",
-    github: ""
-  },
+  
 
   // --- DAYCARE / CHILDCARE WEBSITES ---
   {
