@@ -4,7 +4,35 @@ import { Github, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image'; 
 
 const projects = [
-  // --- CLIENT WEBSITES (With Images) ---
+  // --- DATA & ANALYTICS PROJECTS ---
+  {
+    title: "Global AI & Data Jobs Salary Insights",
+    desc: "Interactive Tableau dashboard analyzing global AI and data job salaries, built on a Python-powered ETL pipeline.",
+    tags: ["Tableau", "Python", "ETL", "Data Analysis"],
+    image: "/projects/Dashboard-data.png",
+    imageContain: true,
+    color: "from-blue-600 to-indigo-500",
+    link: "https://public.tableau.com/app/profile/hassan.aden/viz/Global-AI-Data-Jobs-Salary-Insights/Dashboard?publish=yes",
+    github: "https://github.com/obsidian-high/global-ai-data-jobs-salary-pipeline"
+  },
+  {
+    title: "Predictive Churn Model",
+    desc: "Machine Learning model predicting customer exit with 85% accuracy using Python.",
+    tags: ["Python", "Scikit-Learn", "Pandas"],
+    color: "from-purple-600 to-pink-500",
+    link: "#",
+    github: ""
+  },
+  {
+    title: "Sales Dashboard Pro",
+    desc: "Interactive PowerBI dashboard analyzing global retail sales trends.",
+    tags: ["PowerBI", "SQL", "Excel"],
+    color: "from-blue-600 to-cyan-500",
+    link: "#",
+    github: ""
+  },
+
+  // --- CLIENT WEBSITES ---
   {
     title: "Nisaa-afs",
     desc: "A high-impact NGO platform dedicated to social empowerment and community outreach.",
@@ -32,21 +60,33 @@ const projects = [
     link: "https://imara-blocks-ltd.vercel.app/",
     github: "" 
   },
-   {
-    title: "Motherbloom-PostPartum Retreat",
+  {
+    title: "Augab Ltd",
+    desc: "A local business Garage, Cyber cafe & Computer training center.",
+    tags: ["React", "Framer Motion", "Forms"],
+    image: "/projects/augabltd.png",
+    color: "from-amber-400 to-orange-300",
+    link: "https://augab.vercel.app/",
+    github: "" 
+  },
+  {
+    title: "Portfolio Website",
+    desc: "Modern, high-performance web portfolio built with Next.js.",
+    tags: ["Next.js", "Tailwind", "React"],
+    image: "/projects/portfolio.png",
+    color: "from-orange-500 to-amber-500",
+    link: "#",
+    github: ""
+  },
+
+  // --- DAYCARE / CHILDCARE WEBSITES ---
+  {
+    title: "Motherbloom — PostPartum Retreat",
     desc: "Unique, user-friendly website with a focus on postpartum care and support.",
     tags: ["React", "Framer Motion", "Forms"],
     image: "/projects/motherbloom proj.png",
     color: "from-amber-400 to-orange-300",
     link: "https://mother-bloom-postpartum-retreat.vercel.app/",
-    github: "" 
-  },{
-    title: "Augab Ltd",
-    desc: "A local business Garage , Cyber cafe & Computer training center.",
-    tags: ["React", "Framer Motion", "Forms"],
-    image: "/projects/augabltd.png",
-    color: "from-amber-400 to-orange-300",
-    link: "https://augab.vercel.app/",
     github: "" 
   },
   {
@@ -67,46 +107,6 @@ const projects = [
     link: "https://garden-playhouse-day-care-and-presc.vercel.app/",
     github: "" 
   },
-
-  // --- DATA & CODE PROJECTS (Gradient / No Image) ---
-  {
-    title: "Global AI & Data Jobs Salary Insights",
-    desc: "Interactive Tableau dashboard analyzing global AI and data job salaries, built on a Python-powered ETL pipeline.",
-    tags: ["Tableau", "Python", "ETL", "Data Analysis"],
-    image: "/projects/Dashboard-data.png",
-    color: "from-blue-600 to-indigo-500",
-    link: "https://public.tableau.com/app/profile/hassan.aden/viz/Global-AI-Data-Jobs-Salary-Insights/Dashboard?publish=yes",
-    github: "https://github.com/obsidian-high/global-ai-data-jobs-salary-pipeline"
-  },
-  {
-    title: "Predictive Churn Model",
-    desc: "Machine Learning model predicting customer exit with 85% accuracy using Python.",
-    tags: ["Python", "Scikit-Learn", "Pandas"],
-    // No image -> Uses Purple Gradient
-    color: "from-purple-600 to-pink-500",
-    link: "#",
-    github: "" // Add link if public
-  },
-  {
-    title: "Sales Dashboard Pro",
-    desc: "Interactive PowerBI dashboard analyzing global retail sales trends.",
-    tags: ["PowerBI", "SQL", "Excel"],
-    // No image -> Uses Blue Gradient
-    color: "from-blue-600 to-cyan-500", 
-    link: "#",
-    github: "https://github.com/yourusername" 
-  },
-
-  // --- PORTFOLIO (With Image) ---
-  {
-    title: "Portfolio Website",
-    desc: "Modern, high-performance web portfolio built with Next.js.",
-    tags: ["Next.js", "Tailwind", "React"],
-    image: "/projects/portfolio.png",
-    color: "from-orange-500 to-amber-500",
-    link: "#",
-    github: "https://github.com/yourusername/portfolio" 
-  }
 ];
 
 export default function Projects() {
@@ -143,7 +143,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                  className={`${project.imageContain ? 'object-contain p-2' : 'object-cover'} opacity-80 group-hover:opacity-100 transition-opacity duration-500`}
                 />
               ) : (
                 <>
