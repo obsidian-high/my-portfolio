@@ -70,6 +70,15 @@ const projects = [
 
   // --- DATA & CODE PROJECTS (Gradient / No Image) ---
   {
+    title: "Global AI & Data Jobs Salary Insights",
+    desc: "Interactive Tableau dashboard analyzing global AI and data job salaries, built on a Python-powered ETL pipeline.",
+    tags: ["Tableau", "Python", "ETL", "Data Analysis"],
+    image: "/projects/Dashboard-data.png",
+    color: "from-blue-600 to-indigo-500",
+    link: "https://public.tableau.com/app/profile/hassan.aden/viz/Global-AI-Data-Jobs-Salary-Insights/Dashboard?publish=yes",
+    github: "https://github.com/obsidian-high/global-ai-data-jobs-salary-pipeline"
+  },
+  {
     title: "Predictive Churn Model",
     desc: "Machine Learning model predicting customer exit with 85% accuracy using Python.",
     tags: ["Python", "Scikit-Learn", "Pandas"],
