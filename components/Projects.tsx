@@ -39,7 +39,7 @@ const projects = [
     tags: ["Next.js", "CMS", "SEO"],
     image: "/projects/nisaa.png", 
     color: "from-rose-500 to-pink-600",
-    link: "https://nisaa-afs.vercel.app/",
+    link: "https://nisaa-afs.org/",
     github: "" 
   },
   {
