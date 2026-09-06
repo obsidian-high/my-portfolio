@@ -9,7 +9,7 @@ import Shapes from './Shapes';
 const heroSlides = [
   {
     id: 1,
-    role: "Data Analyst",
+    role: "Aspiring Data Analyst",
     desc: "I transform raw data into clear, actionable insights using Python & SQL.",
     color: "text-cyan-400",
     icon: <Database className="text-cyan-400 mb-2" size={32} />
