@@ -42,15 +42,7 @@ const projects = [
     link: "https://nisaa-afs.org/",
     github: "" 
   },
-  {
-    title: "S&A Consulting",
-    desc: "Consulting firm organisation with a focus on providing strategic solutions.",
-    tags: ["React", "Framer Motion", "Forms"],
-    image: "/projects/s&a consulting.png",
-    color: "from-amber-400 to-orange-300",
-    link: "https://s-a-consulting.vercel.app/",
-    github: "" 
-  },
+
   {
     title: "Imara Blocks Ltd",
     desc: "Business-oriented website for a construction company with a focus on quality and innovation.",
